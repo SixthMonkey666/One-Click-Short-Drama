@@ -1,0 +1,8 @@
+[server]
+port = 8503
+headless = true
+fileWatcherType = "poll"
+runOnSave = true
+
+[browser]
+gatherUsageStats = false

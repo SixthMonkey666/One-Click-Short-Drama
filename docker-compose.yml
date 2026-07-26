@@ -1,0 +1,16 @@
+services:
+  video-agent:
+    build: .
+    ports:
+      - "8503:8503"
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      LLM_PROVIDER: mock
+      IMAGE_PROVIDER: mock
+      VIDEO_PROVIDER: mock
+      JUDGE_PROVIDER: mock
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped

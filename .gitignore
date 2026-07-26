@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Project data (runtime generated)
+data/
+!.gitkeep-data
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model files (large, user downloads separately)
+ai_models/
+models/
+*.safetensors
+*.bin
+*.pt
+*.ckpt
+*.gguf
+
+# Generated media and vector caches
+*.mp4
+*.mov
+*.avi
+*.webm
+*.mkv
+*.faiss
+*.index
+*.npy
+*.npz
+vector_cache/
+
+# Build artifacts / packages
+*.zip
+*.tar.gz
+*.tar

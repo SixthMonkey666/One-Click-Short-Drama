@@ -1,0 +1,17 @@
+langgraph==1.2.9
+langgraph-checkpoint-sqlite==3.1.0
+streamlit==1.59.2
+Pillow==11.3.0
+python-dotenv==1.2.2
+langfuse==3.15.0
+PyYAML==6.0.3
+pydantic==2.13.4
+httpx==0.28.1
+torch==2.5.1
+torchvision==0.20.1
+transformers==5.14.1
+diffusers @ git+https://github.com/huggingface/diffusers.git@ad1982ef2fab55e41e4fee4fd81e2f8c7af701fa
+accelerate==1.12.0
+sentencepiece==0.2.2
+safetensors==0.8.0
+qwen-vl-utils==0.0.14

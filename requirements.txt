@@ -1,0 +1,26 @@
+# === 核心依赖（Mock 模式即可运行）===
+langgraph==1.2.9
+langgraph-checkpoint-sqlite==3.1.0
+streamlit==1.59.2
+Pillow==11.3.0
+python-dotenv==1.2.2
+langfuse==3.15.0
+PyYAML==6.0.3
+pydantic>=2.10,<3
+httpx>=0.28,<1
+
+# === 评测统计 ===
+# Pearson/Spearman/MAE 由项目内置实现计算，无额外统计依赖。
+
+# === 本地模型推理依赖（启用 Qwen/FLUX 本地模型时需要）===
+# macOS Apple Silicon 推荐使用系统级 pip3 安装以确保 MPS 加速正常：
+#   pip3 install --user torch torchvision transformers "diffusers>=0.35" accelerate sentencepiece safetensors
+#
+# 如在 Linux/Windows CUDA 环境或 venv 内安装，取消下面注释：
+# torch>=2.5
+# torchvision>=0.20
+# transformers>=5.0
+# diffusers>=0.35
+# accelerate>=0.30
+# sentencepiece>=0.2
+# safetensors>=0.4
